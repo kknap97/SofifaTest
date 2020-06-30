@@ -1,4 +1,4 @@
-package Pages;
+package pages;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.Keys;

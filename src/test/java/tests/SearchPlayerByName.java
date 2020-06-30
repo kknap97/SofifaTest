@@ -1,8 +1,8 @@
-package Tests;
+package tests;
 
-import Helpers.ExcelHelper;
-import Pages.HomePage;
-import Pages.PlayerPage;
+import helpers.ExcelHelper;
+import pages.HomePage;
+import pages.PlayerPage;
 import com.aventstack.extentreports.ExtentTest;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;

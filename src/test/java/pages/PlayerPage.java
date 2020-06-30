@@ -1,7 +1,6 @@
-package Pages;
+package pages;
 
-import Helpers.SeleniumHelper;
-import Tests.BaseFifaTest;
+import helpers.SeleniumHelper;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,6 +10,8 @@ import org.openqa.selenium.support.PageFactory;
 public class PlayerPage {
 
     private SeleniumHelper helper;
+    private WebDriver driver;
+    private Logger logger = Logger.getLogger(PlayerPage.class);
 
     @FindBy (xpath = "//*[@id=\"list\"]/div[2]/div/div/div[1]/div[1]/div[2]/div/div[4]/div/h5/a")
     private WebElement playerNationality;
@@ -24,8 +25,6 @@ public class PlayerPage {
     @FindBy (xpath = "//*[@id=\"list\"]/div[2]/div/div/div[1]/div[1]/div[1]/div/section/div/div[3]/div")
     private WebElement valuePlayer;
 
-    private WebDriver driver;
-    private Logger logger = Logger.getLogger(PlayerPage.class);
     public PlayerPage(WebDriver driver){
         PageFactory.initElements(driver, this);
         this.helper = new SeleniumHelper(driver);
