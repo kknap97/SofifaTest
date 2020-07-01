@@ -1,7 +1,7 @@
 # SofifaTest
 My first project in automated tests. 
 ## Tools and Technologies 
-- Selenium, Java, TestNG, Maven, Intellij IDEA
+- Selenium, TestNG, Maven, Intellij IDEA
 ## Purpose and functionality:
 - Testing search players
 - Checking the correctness of player data display
